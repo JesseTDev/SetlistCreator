@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>Music Setlist Creator</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="title">Setlist Creator</h1>
+      <!-- App Container -->
+      <div class="app-container">
+        <form>
+          <!-- Inner Title -->
+          <div class="inner-title-con">
+            <h2 class="inner-title">Create Your Setlist</h2>
+            <h3 class="setlist-name-title">Setlist Name:</h3>
+            <div class="input-con">
+              <input
+                type="text"
+                placeholder="Enter Setlist Name"
+                id="setlist-name-input"
+                class="setlist-input"
+              />
+              <button type="submit" id="submit-btn" class="submit-btn">
+                <i class="fa-duotone fa-plus"></i>
+              </button>
+            </div>
+          </div>
+          <!-- add song -->
+          <div class="add-song-container">
+            <div class="add-song-title">
+              <h3 class="setlist-name-title">Song Names:</h3>
+              <div class="input-con">
+                <input
+                  type="text"
+                  placeholder="Enter Song Name"
+                  maxlength="25"
+                  id="song-list-input"
+                  class="setlist-input"
+                />
+                <button type="submit" id="add-btn" class="add-btn">
+                  <i class="fa-duotone fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="setlist-container">
+            <div class="setlist-app-header-con">
+              <h2 class="setlist-app-header">Created Setlist</h2>
+            </div>
+            <div class="setlist-name-container">
+              <!-- <h3 class="setlistname"></h3> -->
+            </div>
+            <div class="song-name-container">
+              <ul class="song-names">
+                <!-- <li>song-name1</li> -->
+              </ul>
+            </div>
+            <div class="clear-btn-contaienr">
+              <button class="pdf-btn" id="pdf-btn">Save as PDF</button>
+              <button class="clear-btn">Clear Setlist</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- JS-PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="/app.js"></script>
+  </body>
+</html>
