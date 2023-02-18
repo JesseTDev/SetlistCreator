@@ -1,4 +1,5 @@
 # SetlistCreator
+![setlist-app-screenshot](https://user-images.githubusercontent.com/121024534/219829834-93af4453-d1df-43b5-bab2-b3a7e244db81.png)
 
 <h1>Setlist Creator App</h1>
 
